@@ -3,6 +3,7 @@ html{
 }
 
 body{
+    /* background-image: url(); */
     font-family: monospace;
     background-color: #61a77f;
     margin: 0;
@@ -27,9 +28,9 @@ div{
     box-shadow: 10px 8px 5px rgb(177, 57, 21);
 
     /* inset pa ponerlo dentro  */
-
+/* 
     width: 400px;
-    height: 200px;
+    height: 200px; */
 }
 
 span {
@@ -38,5 +39,16 @@ span {
     margin-block: 3em;
     padding: 2em;
     width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    margin-inline: auto
+
+}
+
+.loco{
+    display: inline-block;
+    color : violet;
+    width: 200px;
+    height: 30px;
 
 }
