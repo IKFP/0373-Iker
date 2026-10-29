@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página web de ejemplo con un poco de todo">
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header>
+    <h1>Mi página web</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <h2>Bienvenido a mi web</h2>
+      <p>Una breve frase que explique de qué va todo esto.</p>
+      <a href="#contacto" class="boton">Contáctame</a>
+      <a href="#servicios" class="boton boton-secundario">Ver servicios</a>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="fila">
+        <img src="https://picsum.photos/400/300?random=1" alt="Foto de perfil" width="400" height="300">
+        <div>
+          <p>Escribe aquí una presentación sobre ti o sobre tu proyecto. Puedes poner <strong>texto en negrita</strong>, <em>cursiva</em> y <a href="#contacto">enlaces</a>.</p>
+          <blockquote>
+            "Una cita o frase que te represente."
+            <cite>— Autor</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <span class="modo-oscuro">🌙</span>
+
+    <!-- SERVICIOS (tarjetas) -->
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Servicio 1</h3>
+          <p>Descripción breve del primer servicio.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Servicio 2</h3>
+          <p>Descripción breve del segundo servicio.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Servicio 3</h3>
+          <p>Descripción breve del tercer servicio.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PASOS (lista ordenada) -->
+    <section id="como-funciona">
+      <h2>Cómo funciona</h2>
+      <ol>
+        <li>Me escribes con tu idea.</li>
+        <li>Hablamos y definimos lo que necesitas.</li>
+        <li>Me pongo manos a la obra.</li>
+        <li>Te entrego el resultado.</li>
+      </ol>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="galeria">
+        <figure>
+          <img src="https://picsum.photos/300/200?random=2" alt="Imagen 1">
+          <figcaption>Imagen 1</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/300/200?random=3" alt="Imagen 2">
+          <figcaption>Imagen 2</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/300/200?random=4" alt="Imagen 3">
+          <figcaption>Imagen 3</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/300/200?random=5" alt="Imagen 4">
+          <figcaption>Imagen 4</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <strong class="loco">Lorem, ipsum dolor.</strong>
+
+    <!-- VÍDEO -->
+    <section id="video">
+      <h2>Vídeo</h2>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- PRECIOS (tabla) -->
+    <section id="precios">
+      <h2>Precios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Incluye</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Básico</td>
+            <td>Una página</td>
+            <td>50 €</td>
+          </tr>
+          <tr>
+            <td>Estándar</td>
+            <td>Hasta 5 páginas</td>
+            <td>150 €</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>Web completa</td>
+            <td>300 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FAQ (desplegables) -->
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Cuánto tarda un proyecto?</summary>
+        <p>Depende del tamaño, pero normalmente entre una y tres semanas.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir cambios?</summary>
+        <p>Sí, incluye una ronda de revisiones.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se paga?</summary>
+        <p>Por transferencia o tarjeta, la mitad al empezar y la mitad al terminar.</p>
+      </details>
+    </section>
+
+    <!-- DE TODO UN POCO: ETIQUETAS VARIAS -->
+    <section id="etiquetas">
+      <h2>De todo un poco</h2>
+
+      <div class="caja" id="encabezados">
+        <h1>Encabezado h1</h1>
+        <h2>Encabezado h2</h2>
+        <h3>Encabezado h3</h3>
+        <h4>Encabezado h4</h4>
+        <h5>Encabezado h5</h5>
+        <h6>Encabezado h6</h6>
+      </div>
+
+      <hr>
+
+      <div class="caja" id="texto">
+        <p>Un párrafo con <span class="resaltado">un span resaltado</span>, <b>negrita</b>, <i>cursiva</i>, <u>subrayado</u>, <mark>marcado</mark>, <small>texto pequeño</small>, <del>tachado</del>, <ins>insertado</ins>, H<sub>2</sub>O y x<sup>2</sup>.</p>
+        <p>Salto de línea con br:<br>esta es la segunda línea.</p>
+        <p>Código en línea: <code>console.log("hola")</code> y tecla <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+        <pre><code>function saludar() {
+  return "Hola mundo";
+}</code></pre>
+        <address>
+          Calle Ejemplo 123<br>
+          Barcelona, España
+        </address>
+        <p>Abreviatura: <abbr title="HyperText Markup Language">HTML</abbr></p>
+      </div>
+
+      <hr>
+
+      <div class="fila" id="listas">
+        <div>
+          <h3>Lista sin orden</h3>
+          <ul>
+            <li>Elemento A</li>
+            <li>Elemento B
+              <ul>
+                <li>Sub-elemento B1</li>
+                <li>Sub-elemento B2</li>
+              </ul>
+            </li>
+            <li>Elemento C</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Lista de definiciones</h3>
+          <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para la estructura.</dd>
+            <dt>CSS</dt>
+            <dd>Lenguaje para dar estilo.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="caja" id="controles">
+        <h3>Controles</h3>
+        <button type="button">Botón</button>
+        <input type="text" placeholder="Texto">
+        <input type="password" placeholder="Contraseña">
+        <input type="number" value="5" min="0" max="10">
+        <input type="date">
+        <input type="color" value="#3366ff">
+        <input type="range" min="0" max="100" value="50">
+        <label><input type="radio" name="opcion" checked> Opción 1</label>
+        <label><input type="radio" name="opcion"> Opción 2</label>
+        <label><input type="checkbox" checked> Casilla</label>
+        <progress value="70" max="100">70%</progress>
+        <meter value="0.6">60%</meter>
+      </div>
+
+      <hr>
+
+      <div class="caja" id="audio">
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio.
+        </audio>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto">
+          <option value="consulta">Consulta</option>
+          <option value="presupuesto">Presupuesto</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+
+        <label>
+          <input type="checkbox" name="acepto" required>
+          Acepto la política de privacidad
+        </label>
+
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mi página web. Todos los derechos reservados.</p>
+    <p>
+      <a href="#">Twitter</a> ·
+      <a href="#">Instagram</a> ·
+      <a href="#">GitHub</a>
+    </p>
+    <p><a href="#inicio">Volver arriba</a></p>
+  </footer>
+
+</body>
+</html>

@@ -34,12 +34,27 @@ h1 {
     background-image: url("./olive-oil_1920.webp");
 }
 
+.p1:hover{
+    border: 4px solid #c9b458;
+    filter: grayscale(100%);
+}
+
 .p2 {
     background-image: url("./olive-oil_1920.webp");
 }
 
+.p2:hover{
+    border: 4px solid #c9b458;
+    filter: grayscale(100%);
+}
+
 .p3 {
     background-image: url("./olive-oil_1920.webp");
+}
+
+.p3:hover{
+    border: 4px solid #c9b458;
+    filter: grayscale(100%);
 }
 
 section {
