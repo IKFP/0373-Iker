@@ -1,21 +1,87 @@
+body{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-templates-areas: "cabeza cabeza"
+    "cuerpo lateral"
+    "pie pie";
 
+    grid-template-rows: 80px 2fr 50px;
 
+    main-height: 100vh;
+}
+header{
+    grid-area: cabeza;
+    background-color: #00ff48;
+}
+main {
+    grid-area: cuerpo;
+    background-color: #f0f0f0;
+}
+aside{
+    grid-area: lateral;
+    background-color: #ff0099;
+}
+footer{
+    grid-area: pie;
+    background-color: #720ca8;
+}
 section {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 3em;
+    /* margin: 10px; */
+    padding: 5em; 
+    display: grid;
+    grid-template-columns: 1.5fr .75fr .25fr 1fr 1.5fr;
+    grid-template-rows: 1fr .5fr .5fr 1fr;
+    gap: 1em;
+    height: 80vh;
+    background-color: #504c4c;
+    border-radius: 7em;
 }
+
 section > * {
-  background-color: red;
-  border: 1px solid #ccc;
-  gap: 3em;
+    background-color: #00ff48;
+    border-radius: 8px;
+    padding: 1em;
 
 }
 
-.grande {
-    background-color: blue;
-    grid-row-start: 2 ;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
+section > div:nth-child(2){
+    background-color: #ff0099;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 2;
+}
+
+section > div:nth-child(4){
+    background-color: #720ca8;
+    grid-row: 1 / span 3;
+    grid-column: -2 / span -1;
+}
+
+section > div:nth-child(5){
+    background-color: #77205d;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+}
+
+section > div:nth-child(6){
+    background-color: #e10f0f;
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 2;
+}
+
+section > div:nth-child(7){
+    background-color: #0fa5e1;
+    grid-row: 3 / span 2;
+    grid-column: -2 / span 1;
+}
+
+section > div:nth-child(8){
+    background-color: #bae10f;
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+}
+
+section > div:nth-child(9){
+    background-color: #e1900f;
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 2;
 }
