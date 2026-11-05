@@ -1,0 +1,38 @@
+/* Eliminar márgenes y rellenos por defecto */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Establecer altura base y evitar saltos en el scroll */
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hacer que imágenes y elementos multimedia sean responsivos */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Heredar fuentes en elementos de formulario */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Eliminar estilos de listas en los navegadores */
+ul, ol {
+  list-style: none;
+}
+
+/* Enlaces sin decoraciones por defecto (opcional) */
+a {
+  text-decoration: none;
+  color: inherit;
+}

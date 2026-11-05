@@ -1,0 +1,21 @@
+
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 3em;
+}
+section > * {
+  background-color: red;
+  border: 1px solid #ccc;
+  gap: 3em;
+
+}
+
+.grande {
+    background-color: blue;
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
