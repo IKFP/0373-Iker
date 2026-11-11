@@ -47,3 +47,8 @@ h1 {
   grid-column: 1 / 4;
   grid-row: 3;
 }
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1rem;
+}
