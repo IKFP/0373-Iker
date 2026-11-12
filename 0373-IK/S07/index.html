@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Inscripción al Torneo</h1>
+    </header>
+    <main>
+
+        <form method="get" action="">
+            <label for="inputNombre">Nombre Completo:</label>
+            <input required type="text" name="nombre" id="InputNombre" placeholder="Tu nombre completo">
+
+            <label for="inputGmail">Correo Electrónico:</label>
+            <input type="email" name="gmail" id="InputGmail" placeholder="tu.correo@ejemplo.com">
+
+            <label for="inputEdad">Edad:</label>
+            <input type="number" name="edad" id="InputEdad" placeholder="Tu edad">
+
+            <label for="inputNickname">Nickname:</label>
+            <input type="text" name="nickname" id="InputNickname" placeholder="Tu nickname">
+
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" name="contra" id="contra" placeholder="Tu contraseña">
+
+            <fieldset>
+                <legend>Videojuego del Torneo</legend>
+                <label for="inputJuego">Videojuegos a participar:</label>
+                <select name="juego" id="InputJuego">
+                    <option value="Valorant">Valorant</option>
+                    <option value="Fortnite">Fortnite</option>
+                    <option value="CSGO">CSGO</option>
+                    <option value="MarvelRivals">Marvel Rivals</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Plataforma</legend>
+                <label for="Plat">PC:</label>
+                <input type="radio" name="plataforma" id="InputPlat" value="PC">
+                <label for="Plat">Xbox:</label>
+                <input type="radio" name="plataforma" id="InputPlat" value="xbox">
+                <label for="Plat">PlayStation:</label>
+                <input type="radio" name="plataforma" id="InputPlat" value="playstation">
+            </fieldset>
+
+            <fieldset> 
+                <legend>Disponibilidad</legend>
+                <label for="dispo">Mañana</label>
+                <input type="checkbox" id="dispo">
+                <label for="dispo">Tarde</label>
+                <input type="checkbox" id="dispo">
+                <label for="dispo">Noche</label>
+                <input type="checkbox" id="dispo">
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha de Nacimiento</legend>
+                <label for="inputFecha">Fecha de Nacimiento:</label>
+                <input type="date" name="fecha" id="InputFecha">
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentarios Adicionales</legend>
+                <textarea name="name" id="textarea" cols="70" rows="10" placeholder="Escribe aquí..."></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Archivo</legend>
+                <label for="link">Términos y condiciones:</label>
+                <a href="term.html" target="_blank">Click aquí</a>
+                <label for="termi">Acepto los términos y condiciones</label>
+                <input requires type="radio" name="term" id="termi">
+            </fieldset> 
+
+
+
+<!-- 
+            <label for="inputTelefono">Telefono:</label>
+            <input type="text" name="telefono" id="InputTelefono">
+
+            <label for="inputDireccion">Direccion:</label>
+            <input type="text" name="direccion" id="InputDireccion">
+
+
+
+            <fieldset>
+                <legend>Pokémon</legend>
+                <label for="inputPokemon">Charmander</label>
+                <input type="checkbox" value="charmander" onclick="history.back()">
+                <label for="inputPokemon">Pikachu</label>
+                <input type="checkbox" value="pickachu" onclick="history.back()">
+                <label for="inputPokemon">Bulbasaur</label>
+                <input type="checkbox" value="bulbasaur" onclick="history.back()">
+            </fieldset>
+
+            <fieldset>
+                <legend>Pokémon iniciales</legend>
+                <label for="inputPokemon">Charmander</label>
+                <input type="radio" value="radiocharmander" >
+                <label for="inputPokemon">Pikachu</label>
+                <input type="radio" value="radiopickachu" >
+                <label for="inputPokemon">Bulbasaur</label>
+                <input type="radio" value="bulbasaur" >
+            </fieldset>
+
+            <fieldset class="todo">
+
+                <legend>Todos los tipos de botones</legend>
+                <input type="button" value="Boton" >
+                <input type="color" value="color">
+                <input type="date" value="fecha">
+                <input type="datetime-local" value="timedata">
+                <input type="search" value="busca">
+                <input type="file" value="file">
+                <input type="range" value="50" min="0" max="100">
+                <input type="image" value="imagen">
+                <input type="url" value="url">
+                <input type="tel" placeholder="telefono">
+                <input type="time" placeholder="hora">
+                <input type="location" placeholder="sitio">
+                <input type="password" placeholder="contraseña">
+
+            </fieldset> -->
+
+            <div class="buttons"> 
+
+                <button  type="submit">Inscribirse</button>
+                <button type="reset">Borrar</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/0373-IK/S07/img/torneo.jpg");
+  background-size: cover;
+}
+
+H1{
+  color:azure;
+  display: grid;
+  gap: 1em;
+  width: 90%;
+  max-width: 450px;
+  margin: 20px auto;
+  background-color: rgb(33, 176, 136);
+  border-radius: 10px;
+  border: 10px solid black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  color: cornsilk;
+  display: grid;
+  gap: 1em;
+  width: 90%;
+  max-width: 450px;
+  margin: 20px auto;
+  background-color: rgb(91, 89, 237);
+  border-radius: 10px;
+  border: 10px solid black;
+  padding: 2em;
+}
+
+form * {
+  max-width: 100%;
+  min-width: 0;
+}
+
+fieldset {
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em 0.8em;
+  align-items: center;
+  border-color: rgba(94, 40, 233, 0.975);
+}
+
+fieldset.todo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8em;
+}
+
+
+fieldset.todo input {
+  width: 100%;
+}
+
+
+fieldset.todo input[type="color"] {
+  width: 60px;
+  height: 35px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: black;
+  
+}
