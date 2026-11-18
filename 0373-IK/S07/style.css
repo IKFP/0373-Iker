@@ -1,11 +1,15 @@
+/* bordes y espacios se incluyan dentro del tamaño de los elementos */
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
+/* Pone una imagen de fondo */
 body {
   background-image: url("/0373-IK/S07/img/torneo.jpg");
   background-size: cover;
 }
 
+/* estilo al titulo*/
 H1{
   color:azure;
   display: grid;
@@ -18,12 +22,14 @@ H1{
   border: 10px solid black;
 }
 
+/* Cambia la letra de la pagina y elimina los margenes */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Da estilo al formulario, lo centra y organiza */
 form {
   color: cornsilk;
   display: grid;
@@ -37,11 +43,13 @@ form {
   padding: 2em;
 }
 
+/* Evita que los elementos del formulario sobresalgan de su espacio */
 form * {
   max-width: 100%;
   min-width: 0;
 }
 
+/* Organiza los campos en dos columnas y deja espacio entre ellos */
 fieldset {
 
   display: grid;
@@ -51,23 +59,25 @@ fieldset {
   border-color: rgba(94, 40, 233, 0.975);
 }
 
+/* Organiza los elementos de la clase todo en una sola columna */
 fieldset.todo {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.8em;
 }
 
-
+/* Hace que los campos de la clase todo ocupen todo el ancho */
 fieldset.todo input {
   width: 100%;
 }
 
-
+/* Establece el tamaño del campo para elegir un color */
 fieldset.todo input[type="color"] {
   width: 60px;
   height: 35px;
 }
 
+/* Coloca los botones a la derecha y deja espacio entre ellos */
 .buttons {
   display: flex;
   justify-content: flex-end;
@@ -75,6 +85,7 @@ fieldset.todo input[type="color"] {
   margin-top: 1em;
 }
 
+/* Cambia el tamaño, grosor y color del titulo de los fieldset */
 legend {
   font-weight: bold;
   font-size: 1.2em;
@@ -82,6 +93,7 @@ legend {
   
 }
 
+/* Da color, bordes y tamaño a los botones */
 button {
   background-color: rgb(33, 176, 136);
   color: white;
@@ -91,12 +103,13 @@ button {
   cursor: pointer;
 }
 
+/* Cambia el color del boton cuando pasamos el raton por encima */
 button:hover {
   background-color: rgb(20, 120, 100);
 }
 
+/* Destaca los campos cuando los seleccionamos */
 input:focus, select:focus, textarea:focus {
-  outline: 3px solid rgb(33, 176, 136);
+  outline: auto solid rgb(33, 176, 136);
   background-color: lightyellow;
 }
-

@@ -13,6 +13,7 @@
     <main>
 
         <form method="get" action="">
+            <!-- Introducir texto de diferentes tipos -->
             <label for="inputNombre">Nombre Completo:</label>
             <input required type="text" name="nombre" id="InputNombre" placeholder="Tu nombre completo">
 
@@ -28,6 +29,8 @@
             <label for="Contraseña">Contraseña:</label>
             <input type="password" name="contra" id="contra" placeholder="Tu contraseña">
 
+            <!-- Selección de opciones -->
+
             <fieldset>
                 <legend>Videojuego del Torneo</legend>
                 <label for="inputJuego">Videojuegos a participar:</label>
@@ -39,6 +42,8 @@
                 </select>
             </fieldset>
 
+            <!-- Una sola opción -->
+
             <fieldset>
                 <legend>Plataforma</legend>
                 <label for="Plat">PC:</label>
@@ -48,6 +53,8 @@
                 <label for="Plat">PlayStation:</label>
                 <input type="radio" name="plataforma" id="InputPlat" value="playstation">
             </fieldset>
+
+            <!-- Opciones múltiples -->
 
             <fieldset> 
                 <legend>Disponibilidad</legend>
@@ -59,16 +66,22 @@
                 <input type="checkbox" id="dispo">
             </fieldset>
 
+            <!-- Fecha de nacimiento -->
+
             <fieldset>
                 <legend>Fecha de Nacimiento</legend>
                 <label for="inputFecha">Fecha de Nacimiento:</label>
                 <input type="date" name="fecha" id="InputFecha">
             </fieldset>
 
+            <!-- Comentarios adicionales -->
+
             <fieldset>
                 <legend>Comentarios Adicionales</legend>
                 <textarea name="name" id="textarea" cols="70" rows="10" placeholder="Escribe aquí..."></textarea>
             </fieldset>
+
+            <!-- Consentimiento tal y cual -->
             
             <fieldset>
                 <legend>Archivo</legend>
