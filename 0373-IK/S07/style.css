@@ -81,3 +81,22 @@ legend {
   color: black;
   
 }
+
+button {
+  background-color: rgb(33, 176, 136);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(20, 120, 100);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid rgb(33, 176, 136);
+  background-color: lightyellow;
+}
+
